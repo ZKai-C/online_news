@@ -1,8 +1,9 @@
 ## 示意
-![onlinenews](https://github.com/user-attachments/assets/2c331d0f-2864-4dcf-9474-c84f852210c1)
+![onlinenews](https://github.com/user-attachments/assets/204d8a02-f46b-4e36-9754-90b9a90aef47)
+
 
 ## 新增网讯发布编辑删除
-## 管理员账号：zkai 密码：1234
+   管理员账号：zkai 密码：1234
 
 ## 快速开始
 ## 配置环境
