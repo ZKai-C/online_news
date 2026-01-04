@@ -12,23 +12,23 @@
                 <span>总部网讯</span>
             </el-menu-item>
 
-            <!-- 分部资讯 -->
+            <!-- 数据中心 -->
             <el-menu-item index="2" @click="$router.push('/archive')">
                 <font-awesome-icon
                     :icon="['fas', 'box-archive']"
                     class="menu-icon"
                 />
-                <span>分部咨询</span>
+                <span>数据中心</span>
             </el-menu-item>
 
-            <!-- 人力资源 -->
+            <!-- 分部资讯 -->
             <el-sub-menu index="3">
                 <template #title>
                     <font-awesome-icon
                         :icon="['fas', 'folder']"
                         class="menu-icon"
                     />
-                    <span>人力资源</span>
+                    <span>分部资讯</span>
                 </template>
                 <el-menu-item
                     v-for="category in $store.state.categoryAbout
@@ -43,14 +43,32 @@
                 </el-menu-item>
             </el-sub-menu>
 
-            <!-- 学习中心 -->
+            <!-- 人力资源 -->
+            <el-menu-item index="5" @click="$router.push('/')">
+                <font-awesome-icon
+                    :icon="['fab', 'fort-awesome']"
+                    class="menu-icon"
+                />
+                <span>人力资源</span>
+            </el-menu-item>
+
+            <!-- 研修中心 -->
+            <el-menu-item index="6" @click="$router.push('/')">
+                <font-awesome-icon
+                    :icon="['fab', 'fort-awesome']"
+                    class="menu-icon"
+                />
+                <span>研修中心</span>
+            </el-menu-item>
+
+            <!-- 标签分类 -->
             <el-sub-menu index="4">
                 <template #title>
                     <font-awesome-icon
                         :icon="['fas', 'tags']"
                         class="menu-icon"
                     />
-                    <span>学习中心</span>
+                    <span>标签分类</span>
                 </template>
                 <el-menu-item
                     v-for="tag in $store.state.tagAbout.tagCounts"
@@ -64,33 +82,25 @@
                 </el-menu-item>
             </el-sub-menu>
 
-            <!-- 企业邮箱 -->
+            <!-- 发布网讯 -->
             <el-menu-item
-                index="5"
+                index="7"
                 v-if="$store.state.adminAbout.isAdmin"
                 @click="$router.push('/article/add')"
             >
                 <font-awesome-icon :icon="['fas', 'pen']" class="menu-icon" />
-                <span>企业邮箱</span>
+                <span>发布网讯</span>
             </el-menu-item>
 
-            <!-- 个人中心 -->
-            <el-menu-item index="6" @click="$router.push('/user/settings')">
-                <font-awesome-icon :icon="['fas', 'user']" class="menu-icon" />
-                <span>个人中心</span>
-            </el-menu-item>
-
-            <!-- 在线服务 -->
-            <el-menu-item index="7" @click="$router.push('/user/settings')">
-                <font-awesome-icon :icon="['fas', 'user']" class="menu-icon" />
-                <span>个人中心</span>
-            </el-menu-item>
-
-            <!-- 数据中心 -->
+            <!--个人中心 -->
             <el-menu-item index="8" @click="$router.push('/user/settings')">
                 <font-awesome-icon :icon="['fas', 'user']" class="menu-icon" />
                 <span>个人中心</span>
             </el-menu-item>
+
+
+
+
     
         </el-menu>
     </div>

@@ -40,17 +40,17 @@ export default {
         let drawer = ref(false);
         let menuItems = reactive([
             { name: "总部网讯", icon: ["fab", "fort-awesome"], href: "/" },
-            { name: "分部咨询", icon: ["fas", "box-archive"], href: "/archive" },
-            { name: "人力资源", icon: ["fas", "folder"], href: "/category" },
-            { name: "企业邮箱", icon: ["fas", "tags"], href: "/tag" },
+            { name: "分部资讯", icon: ["fas", "folder"], href: "/category" },
+            { name: "数据中心", icon: ["fas", "box-archive"], href: "/archive" },
+            { name: "人力资源", icon: ["fab", "fort-awesome"], href: "/" },
+            { name: "研修中心", icon: ["fab", "fort-awesome"], href: "/" },
+            { name: "标签分类", icon: ["fas", "tags"], href: "/tag" },
             { name: "个人中心", icon: ["fas", "user"], href: "/user/settings" },
-            { name: "在线服务", icon: ["fab", "fort-awesome"], href: "/" },
-            { name: "数据中心", icon: ["fab", "fort-awesome"], href: "/" },
         ]);
 
         if (store.state.adminAbout.isAdmin) {
-            menuItems.splice(4, 0, {
-                name: "学习中心",
+            menuItems.splice(5, 0, {
+                name: "发布网讯",
                 icon: ["fas", "pen"],
                 href: "/article/add",
             });

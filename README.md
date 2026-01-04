@@ -1,3 +1,9 @@
+## 示意
+![onlinenews](https://github.com/user-attachments/assets/2c331d0f-2864-4dcf-9474-c84f852210c1)
+
+## 新增网讯发布编辑删除
+## 管理员账号：zkai 密码：1234
+
 ## 快速开始
 ## 配置环境
 ## IDEA Redis JDK17 VUE3 MySQL8 Node18

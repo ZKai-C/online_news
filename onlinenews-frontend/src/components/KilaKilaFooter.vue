@@ -80,10 +80,10 @@ export default {
 
 .footer-image {
     width: 100%;
-    height: 368px;
+    height: 278px;
     background: url("../assets/image/footer.webp") 50% center no-repeat;
     position: absolute;
-    top: -368px;
+    top: -278px;
     z-index: 999;
 }
 
